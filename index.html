@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AccessoryAura | Fashion Accessories</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, sans-serif; background: #fbf6ed; color: #443326; line-height: 1.7; }
+    header { padding: 20px 7%; background: #eee1d0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+    .logo { font-family: Georgia, serif; font-size: 26px; font-weight: bold; color: #795536; }
+    nav { display: flex; flex-wrap: wrap; gap: 20px; }
+    nav a { color: #443326; text-decoration: none; }
+    nav a:hover { color: #a2764e; }
+    .hero { padding: 80px 7%; background: linear-gradient(125deg, #f5e8d6, #e2c6a6); text-align: center; }
+    .hero h1 { font-family: Georgia, serif; font-size: clamp(38px, 6vw, 62px); line-height: 1.15; margin: 18px 0; }
+    .hero p { max-width: 680px; margin: auto; }
+    .btn { display: inline-block; margin-top: 25px; padding: 12px 25px; background: #795536; color: white; text-decoration: none; border-radius: 4px; }
+    section { padding: 55px 7%; }
+    h2 { font-family: Georgia, serif; text-align: center; font-size: 32px; margin-bottom: 28px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 20px; }
+    .card { padding: 18px; background: #fffdf8; border: 1px solid #e7d8c5; border-radius: 10px; text-align: center; }
+    .art { background: #f1e5d4; font-size: 58px; padding: 25px; margin-bottom: 15px; border-radius: 8px; }
+    .card p { margin: 8px 0; }
+    .price { color: #795536; font-weight: bold; }
+    .about { background: #eee1d0; text-align: center; }
+    .about p, .contact p { max-width: 720px; margin: auto; }
+    footer { text-align: center; padding: 25px; background: #443326; color: #fff7e9; }
+    @media(max-width:600px) { header { flex-direction: column; } nav { justify-content: center; gap: 12px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">AccessoryAura ✧</div>
+    <nav>
+      <a href="#home">Home</a><a href="#collections">Collections</a>
+      <a href="#products">Shop</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <p>THE FINISHING TOUCH</p>
+      <h1>Small Details.<br>Beautiful Style.</h1>
+      <p>Discover handbags, jewellery, watches, and sunglasses that bring personality to every outfit.</p>
+      <a class="btn" href="#products">Explore Accessories</a>
+    </section>
+    <section id="collections">
+      <h2>Shop by Category</h2>
+      <div class="grid">
+        <article class="card"><div class="art">👜</div><h3>Bags & Purses</h3><p>Everyday essentials with timeless appeal.</p></article>
+        <article class="card"><div class="art">💍</div><h3>Jewellery</h3><p>Little details that shine.</p></article>
+        <article class="card"><div class="art">⌚</div><h3>Watches</h3><p>Classic style for every moment.</p></article>
+        <article class="card"><div class="art">🕶️</div><h3>Sunglasses</h3><p>A fresh finishing touch.</p></article>
+      </div>
+    </section>
+    <section id="products">
+      <h2>Our Favourites</h2>
+      <div class="grid">
+        <article class="card"><div class="art">👜</div><h3>Everyday Tote</h3><p class="price">₹1,299</p></article>
+        <article class="card"><div class="art">💛</div><h3>Golden Glow Hoops</h3><p class="price">₹599</p></article>
+        <article class="card"><div class="art">⌚</div><h3>Classic Timepiece</h3><p class="price">₹1,999</p></article>
+        <article class="card"><div class="art">🕶️</div><h3>Weekend Shades</h3><p class="price">₹999</p></article>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h2>Details That Define You</h2>
+      <p>AccessoryAura is all about the finishing touches. Explore versatile accessories that complement your wardrobe and help you express your personal style.</p>
+    </section>
+    <section class="contact" id="contact">
+      <h2>Let's Connect</h2>
+      <p>Need help choosing an accessory? Contact us for more information about our collection.</p>
+      <a class="btn" href="mailto:hello@example.com">Contact Us</a>
+    </section>
+  </main>
+  <footer><p>© 2026 AccessoryAura | Your look, beautifully completed.</p></footer>
+</body>
+</html>
